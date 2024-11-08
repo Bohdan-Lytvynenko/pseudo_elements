@@ -4,3 +4,55 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*first-line property styles the first line of the element
+IT IS IMPORTANT TO NOTE THAT FIRST LINE PROPERTY CAN BE APPLIED
+ONLY FOR BLOCK LEVEL ELEMENTS
+FIRST LINE HAS THE FOLLOWING PROPERTIES:
+1. color
+2. font
+3. background
+4. word_spacing
+5. letter_spacing
+6. text-decoration
+7. line-height
+8. clear*/
+.first_text::first-line {
+color: blueviolet;
+font-size: 23px;
+}
+/*first-letter property styles the first letter of the element and has
+the following properties: 
+1. color
+2. font
+3. background
+4. padding
+5. margin
+6. text-decoration
+7. line-height
+8. clear */
+.second_text::first-letter {
+color: red;
+font-size: 40px;
+}
+.all_text::first-letter {
+color: blue;
+font-size: 45px;
+}
+.all_text::first-line {
+background-color: aqua;
+color: brown;
+}
+/*
+before pseudo element is used to input certain content before element content*/
+.first_title::before {
+/* content: url(images/sunset.jpeg); */
+content: 'this is content text';
+}
+.second_title::after {
+content: 'this is content text';
+/*content can be applied only one time*/
+}
+/*
+HOMEWORK
+1.Selection
+2.Marker*/
